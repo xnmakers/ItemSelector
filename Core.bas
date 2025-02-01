@@ -1,4 +1,5 @@
 Attribute VB_Name = "Core"
+'XNMAKERS CODE STARTS HERE
 Option Private Module
 Option Explicit
 ' ----------------------------------------------------------------
