@@ -7,7 +7,6 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
-
 'XNMAKERS CODE STARTS HERE
 Option Explicit
 
@@ -220,6 +219,8 @@ ErrorHandler:
     MsgBox "Error on Assigner.AssignFromNode(): " & Err.Description, vbCritical
     End
 End Function
+
+
 
 
 

@@ -2,30 +2,6 @@ Attribute VB_Name = "Core"
 'XNMAKERS CODE STARTS HERE
 Option Private Module
 Option Explicit
-' ----------------------------------------------------------------
-' ----------------------------------------------------------------
-' -------------------------- Authos's Note -----------------------
-' ----------------------------------------------------------------
-' ----------------------------------------------------------------
-Private Const INFO_VERSION_MAJOR As String = "1"
-Private Const INFO_VERSION_MINOR As String = "1"
-Private Const INFO_AUTHOR As String = "Xingyun Jin"
-Private Const INFO_EMAIL As String = "xingyun.jin@avangrid.com"
-Private Const INFO_DATE As String = "01/28/2025"
-
-Public Const INFO_TITLE = "Item Selector - v" & INFO_VERSION_MAJOR & "." & INFO_VERSION_MINOR
-Public Const INFO_DESCRIPTION = "The Macro UI is to generate Tree Structure using the specified data." & _
-                                "The Macro UI supports auto-fill of the items to the pairing cells, based on the data library that is mapped from Worksheet, [ClassDataMapping] ."
-Public Const INFO_KNOWNISSUE = vbCrLf & "Known Issues:" & vbCrLf & _
-                                "1. The Macro clears the Undo and Redo (ctrl+z, ctrl+y) stack by design" & vbCrLf & _
-                                "2. Auto-fill of associating cell functions one at a time. Mass Auto-fill is not supported at the moment" & vbCrLf & _
-                                "3. The Macro is not tested on Mac OS" & vbCrLf & _
-                                "4. The Macro is not tested on Excel 2010 or earlier versions" & vbCrLf & _
-                                "5. The Macro is not tested on Excel Online" & vbCrLf & _
-                                "6. The Macro is not tested on Excel Mobile"
-
-Public Const INFO_CONTACT = vbCrLf & "Please contact the Author, " & INFO_AUTHOR & " for more information " & vbCrLf & _
-                            INFO_EMAIL
 
 Private Const DATAENTRY_WORKSHEET As String = "ClassDataMapping"
 Private Const DATAENTRY_TableFrom As String = "tbl_ClassDataMapping_From"
@@ -36,13 +12,6 @@ Public Enum ColumnProperty
     ValueColumn
     NotAssigned
 End Enum
-' ----------------------------------------------------------------
-' ----------------------------------------------------------------
-' -------------------------- Authos's Note -----------------------
-' ----------------------------------------------------------------
-' ----------------------------------------------------------------
-
-
 
 ' ----------------------------------------------------------------
 ' ----------------------------------------------------------------
@@ -128,7 +97,7 @@ Public Sub LoadDataLibraries()
     Set pAssignerList = New Collection
 
     On Error Resume Next
-    Set wkst = ThisWorkbook.Sheets(DATAENTRY_WORKSHEET)    
+    Set wkst = ThisWorkbook.Sheets(DATAENTRY_WORKSHEET)
 
     If wkst Is Nothing Then
         MsgBox "Worksheet '" & DATAENTRY_WORKSHEET & "' is not found! Please provide 'ClassDataMapping' worksheet.", vbExclamation, "Class Data Mapping Warning"
@@ -154,31 +123,31 @@ Public Sub LoadDataLibraries()
             Dim data As DataLibrary
             Set data = New DataLibrary
 
-            If IsError(row.Cells(1, 1).Value) Or IsError(row.Cells(1, 2).Value) Or _
-               IsError(row.Cells(1, 3).Value) Or IsError(row.Cells(1, 4).Value) Or _
-               IsError(row.Cells(1, 5).Value) Or IsError(row.Cells(1, 6).Value) Then
-                MsgBox "Error in data at row " & row.Row & " at table: '" & DATAENTRY_TableFrom & "'. Please check the data.", vbExclamation, "Data Error in Defining Data Library"
+            If IsError(row.Cells(1, 1).value) Or IsError(row.Cells(1, 2).value) Or _
+               IsError(row.Cells(1, 3).value) Or IsError(row.Cells(1, 4).value) Or _
+               IsError(row.Cells(1, 5).value) Or IsError(row.Cells(1, 6).value) Then
+                MsgBox "Error in data at row " & row.row & " at table: '" & DATAENTRY_TableFrom & "'. Please check the data.", vbExclamation, "Data Error in Defining Data Library"
                 End
             End If
             
-            data.Initialize row.Cells(1, 1).Value, row.Cells(1, 2).Value, _
-                            row.Cells(1, 3).Value, row.Cells(1, 4).Value, _
-                            row.Cells(1, 5).Value, row.Cells(1, 6).Value
-            pDataLibDict.Add row.Cells(1, 1).Value, data
+            data.Initialize row.Cells(1, 1).value, row.Cells(1, 2).value, _
+                            row.Cells(1, 3).value, row.Cells(1, 4).value, _
+                            row.Cells(1, 5).value, row.Cells(1, 6).value
+            pDataLibDict.Add row.Cells(1, 1).value, data
         End If
     Next row
     
     For Each row In rngTo.Rows
         Dim ass As Assigner
         Set ass = New Assigner
-        If IsError(row.Cells(1, 1).Value) Or IsError(row.Cells(1, 2).Value) Or _
-           IsError(row.Cells(1, 3).Value) Or IsError(row.Cells(1, 4).Value) Then
-            MsgBox "Error in data at row " & row.Row & " at table: '" & DATAENTRY_TableTo & "'. Please check the data.", vbExclamation, "Data Error in Defining Assigner"
+        If IsError(row.Cells(1, 1).value) Or IsError(row.Cells(1, 2).value) Or _
+           IsError(row.Cells(1, 3).value) Or IsError(row.Cells(1, 4).value) Then
+            MsgBox "Error in data at row " & row.row & " at table: '" & DATAENTRY_TableTo & "'. Please check the data.", vbExclamation, "Data Error in Defining Assigner"
             End
         End If
 
-        ass.Initialize row.Cells(1, 2).Value, row.Cells(1, 3).Value, _
-                row.Cells(1, 4).Value, pDataLibDict(row.Cells(1, 1).Value)
+        ass.Initialize row.Cells(1, 2).value, row.Cells(1, 3).value, _
+                row.Cells(1, 4).value, pDataLibDict(row.Cells(1, 1).value)
         pAssignerList.Add ass
     Next row
     
@@ -428,3 +397,6 @@ ErrorHandler:
     Set GetTableObject = Nothing
     End
 End Function
+
+
+
