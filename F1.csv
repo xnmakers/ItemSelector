@@ -1,4 +1,4 @@
-﻿parent code,code,parent class name,class name,vgb class name
+﻿parent, code,code,parent class name,class name,vgb class name
 system,A,system class,electrical grid and distribution system,System for operation and monitoring 
 A,AA,electrical grid and distribution system,systems for higher-level management,System for automation 
 AA,AAB,systems for higher-level management,operation and monitoring (electrical),System for Metering
