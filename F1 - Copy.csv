@@ -1,0 +1,383 @@
+﻿parent code,code,parent class name,class name,vgb class name
+system,A,system class,electrical grid and distribution system,System for operation and monitoring 
+A,AA,electrical grid and distribution system,"systems for, higher-level management",System for automation 
+AA,AAB,systems for higher-level management,operation and monitoring (electrical),System for Metering
+AA,AAC,systems for higher-level management,automation systems (electrical),Installation system for higher-level tasks 
+AA,AAM,systems for higher-level management,metering,Systems for Un > 420 kV 
+AA,AAS,systems for higher-level management,installation system for higher-level tasks ,Distribution for Un  1000 kV
+A,AB,electrical grid and distribution system,systems for un > 420 kv,Distribution for 765 kV < Un < 1000 kV
+AB,ABA,systems for un > 420 kv,ac distribution for un > 1000 kv,Distribution for 525 kV < Un < 765 kV
+AB,ABC,systems for un > 420 kv,ac distribution for 765 kv < un < 1000 kv,Distribution for 420 kV < Un < 525 kV
+AB,ABE,systems for un > 420 kv,ac distribution for 525 kv < un < 765 kv,Systems for compensation
+AB,ABG,systems for un > 420 kv,ac distribution for 420 kv < un < 525 kv,- available for use -
+AB,ABP,systems for un > 420 kv,systems for compensation for un > 420 kv,- available for use -
+AB,ABQ,systems for un > 420 kv,dc distribution for un > 1000 kv,Installation system for higher-level tasks of systems for Un > 420 kV
+AB,ABR,systems for un > 420 kv,dc distribution for 765 kv < un < 1000 kv,- available for use -
+AB,ABS,systems for un > 420 kv,installation system for higher-level tasks of systems for Un > 420 kV,- available for use -
+AB,ABT,systems for un > 420 kv,dc distribution for 525 kv < un < 765 kv,Systems for 380 kV ≤ Un < 420 kV 
+AB,ABU,systems for un > 420 kv,dc distribution for 420 kv < un < 525 kv,Distribution for 380 kV 
+A,AC,electrical grid and distribution system,systems for 380 kv < un < 420 kv,- available for use -
+AC,ACA,systems for 380 kv < un < 420 kv,ac distribution for 380 kv < un < 420 kv,Systems for 220 kV s Un < 380 kV 
+AC,ACQ,systems for 380 kv < un < 420 kv,dc distribution for 380 kv < un < 420 kv,Distribution for 300 kV < Un < 380 kV
+AC,ACS,systems for 380 kv < un < 420 kv,installation system for higher-level tasks of systems for 380 kV < Un < 420 kV,Installation system for higher-level tasks of systems for 380 kV < Un < 420 kV
+A,AD,electrical grid and distribution system,systems for 220 kv < un < 380 kv,Distribution for 250 kV < Un < 300 kV
+AD,ADA,systems for 220 kv < un < 380 kv,ac distribution for 300 kv < un < 380 kv,Distribution for 220 kV 
+AD,ADC,systems for 220 kv < un < 380 kv,ac distribution for 250 kv < un < 300 kv,Systems for compensation
+AD,ADE,systems for 220 kv < un < 380 kv,ac distribution for 220 kv < un < 250 kv,- available for use -
+AD,ADP,systems for 220 kv < un < 380 kv,systems for compensation for 220 kv < un < 380 kv,- available for use -
+AD,ADQ,systems for 220 kv < un < 380 kv,dc distribution for 300 kv < un < 380 kv,Installation system for higher-level tasks of systems for 220 kV < Un < 380 kV
+AD,ADR,systems for 220 kv < un < 380 kv,dc distribution for 250 kv < un < 300 kv,- available for use -
+AD,ADS,systems for 220 kv < un < 380 kv,installation system for higher-level tasks of systems for 220 kV < Un < 380 kV,Systems for 110 kV ≤ Un < 220 kV 
+AD,ADT,systems for 220 kv < un < 380 kv,dc distribution for 220 kv < un < 250 kv,Distribution for 180 kV 
+A,AE,electrical grid and distribution system,systems for 110 kv < un < 220 kv,Distribution for 150 kV (154 kV) 
+AE,AEA,systems for 110 kv < un < 220 kv,ac distribution for 180 kv < un < 220 kv,Distribution for 132 kV (138 kV) 
+AE,AEC,systems for 110 kv < un < 220 kv,ac distribution for 150 kv < un < 180 kv (standard voltage 150 (154) kv),Distribution for 110 kV (115 kV) 
+AE,AEE,systems for 110 kv < un < 220 kv,ac distribution for 132 kv < un < 150 kv (standard voltage 132 (138) kv),Systems for compensation
+AE,AEG,systems for 110 kv < un < 220 kv,ac distribution for 110 kv < un < 132 kv (standard voltage 110 (115) kv),- available for use -
+AE,AEP,systems for 110 kv < un < 220 kv,systems for compensation for 110 kv < un < 220 kv,- available for use -
+AE,AEQ,systems for 110 kv < un < 220 kv,dc distribution for 180 kv < un < 220 kv,Installation system for higher-level tasks of systems for 110 kV < Un < 220 kV
+AE,AER,systems for 110 kv < un < 220 kv,dc distribution for 150 kv < un < 180 kv (standard voltage 150 (154) kv),- available for use -
+AE,AES,systems for 110 kv < un < 220 kv,installation system for higher-level tasks of systems for 110 kV < Un < 220 kV,- available for use -
+AE,AET,systems for 110 kv < un < 220 kv,dc distribution for 132 kv < un < 150 kv (standard voltage 132 (138) kv),Systems for 60 kV ≤ Un < 110 kV 
+AE,AEU,systems for 110 kv < un < 220 kv,dc distribution for 110 kv < un < 132 kv (standard voltage 110 (115) kv),Distribution for 60 kV 
+A,AF,electrical grid and distribution system,systems for 60 kv < un < 110 kv,- available for use -
+AF,AFA,systems for 60 kv < un < 110 kv,ac distribution for 60 kv < un < 110 kv,Installation system for higher-level tasks of systems for 60 kV < Un < 110 kV
+AF,AFQ,systems for 60 kv < un < 110 kv,dc distribution for 60 kv < un < 110 kv,Systems for 45 kV ≤ Un < 60 kV 
+AF,AFS,systems for 60 kv < un < 110 kv,installation system for higher-level tasks of systems for 60 kV < Un < 110 kV,Distribution for 45 kV 
+A,AG,electrical grid and distribution system,systems for 45 kv < un < 60 kv,Systems for compensation
+AG,AGA,systems for 45 kv < un < 60 kv,ac distribution for 45 kv < un < 60 kv,- available for use -
+AG,AGP,systems for 45 kv < un < 60 kv,systems for compensation for 45 kv < un < 60 kv,Installation system for higher-level tasks of systems for 45 kV < Un < 60 kV
+AG,AGQ,systems for 45 kv < un < 60 kv,dc distribution for 45 kv < un < 60 kv,Systems for 30 kV ≤ Un < 45 kV 
+AG,AGS,systems for 45 kv < un < 60 kv,installation system for higher-level tasks of systems for 45 kV < Un < 60 kV,Distribution for 30 kV 
+A,AH,electrical grid and distribution system,systems for 30 kv < un < 45 kv,Systems for compensation
+AH,AHA,systems for 30 kv < un < 45 kv,ac distribution for 30 kv < un < 45 kv,- available for use -
+AH,AHP,systems for 30 kv < un < 45 kv,systems for compensation for 30 kv < un < 45 kv,Installation system for higher-level tasks of systems for 30 kV < Un < 45 kV
+AH,AHQ,systems for 30 kv < un < 45 kv,dc distribution for 30 kv < un < 45 kv,Systems for 20 kV ≤ Un < 30 kV 
+AH,AHS,systems for 30 kv < un < 45 kv,installation system for higher-level tasks of systems for 30 kV < Un < 45 kV,Distribution for 20 kV 
+A,AJ,electrical grid and distribution system,systems for 20 kv < un < 30 kv,Systems for compensation
+AJ,AJA,systems for 20 kv < un < 30 kv,ac distribution for 20 kv < un < 30 kv,- available for use -
+AJ,AJP,systems for 20 kv < un < 30 kv,systems for compensation for 20 kv < un < 30 kv,Installation system for higher-level tasks of systems for 20 kV < Un < 30 kV
+AJ,AJQ,systems for 20 kv < un < 30 kv,dc distribution for 20 kv < un < 30 kv,Systems for 10 kV ≤ Un < 20 kV 
+AJ,AJS,systems for 20 kv < un < 30 kv,installation system for higher-level tasks of systems for 20 kV < Un < 30 kV,Distribution for 10 kV 
+A,AK,electrical grid and distribution system,systems for 10 kv < un < 20 kv,Systems for compensation
+AK,AKA,systems for 10 kv < un < 20 kv,ac distribution for 10 kv < un < 20 kv,- available for use -
+AK,AKP,systems for 10 kv < un < 20 kv,systems for compensation for 10 kv < un < 20 kv,Installation system for higher-level tasks of systems for 10 kV < Un < 20 kV
+AK,AKQ,systems for 10 kv < un < 20 kv,dc distribution for 10 kv < un < 20 kv,Systems for 6 kV ≤ Un < 10 kV 
+AK,AKS,systems for 10 kv < un < 20 kv,installation system for higher-level tasks of systems for 10 kV < Un < 20 kV,Distribution for 6 kV < Un < 10 kV
+A,AL,electrical grid and distribution system,systems for 6 kv < un < 10 kv,Systems for compensation
+AL,ALA,systems for 6 kv < un < 10 kv,ac distribution for 6 kv < un < 10 kv,- available for use -
+AL,ALP,systems for 6 kv < un < 10 kv,systems for compensation for 6 kv < un < 10 kv,Installation system for higher-level tasks of systems for 6 kV < Un < 10 kV
+AL,ALQ,systems for 6 kv < un < 10 kv,dc distribution for 6 kv < un < 10 kv,Systems for 1 kV ≤ Un <6 kV 
+AL,ALS,systems for 6 kv < un < 10 kv,installation system for higher-level tasks of systems for 6 kV < Un < 10 kV,Distribution for 1 kV < Un < 6 kV
+A,AM,electrical grid and distribution system,systems for 1 kv  <  un < 6 kv,Systems for compensation
+AM,AMA,systems for 1 kv  <  un < 6 kv,ac distribution for 1 kv < un < 6 kv,- available for use -
+AM,AMP,systems for 1 kv  <  un < 6 kv,systems for compensation for 1 kv  <  un < 6 kv,Installation system for higher-level tasks of systems for 1 kV < Un < 6 kV
+AM,AMQ,systems for 1 kv  <  un < 6 kv,dc distribution for 1 kv < un < 6 kv,Systems for Un ≤ 1 kV 
+AM,AMS,systems for 1 kv  <  un < 6 kv,installation system for higher-level tasks of systems for 1 kV < Un < 6 kV,AC Distribution for Un > 400 V 
+A,AN,electrical grid and distribution system,systems for un < 1 kv,Transformer for Un > 400 V 
+AN,ANA,systems for un < 1 kv,"ac system for 400 v < un < 1000 v, distribution",AC Distribution for Un ≤ 400 V 
+AN,AND,systems for un < 1 kv,"ac-system for 400 v < un < 1000 v, transformer system",Safety Power Source 
+AN,ANE,systems for un < 1 kv,ac distribution for un ≤ 400 v,Transformer for Un ≤ 400 V 
+AN,ANG,systems for un < 1 kv,"ac distribution for un < 400 v, back-up power supply",UPS System for Un < 400 V 
+AN,ANH,systems for un < 1 kv,transformer for un ≤ 400 v,- available for use -
+AN,ANJ,systems for un < 1 kv,ups system for un ≤ 400 v,DC Distribution for 24 V < Un <110 V 
+AN,ANL,systems for un < 1 kv,"ac-system for 400 v < un < 1000 v, ups system",Installation system for higher-level tasks of systems for Un < 1 kV
+AN,ANQ,systems for un < 1 kv,dc distribution for un ≤ 110 v,"Equipotential bonding systems (e.g. earthing/grounding, lightning protection) "
+AN,ANV,systems for un < 1 kv,installation system for higher-level tasks of systems for Un < 1 kV,Earthing/grounding system 
+A,AP,electrical grid and distribution system,equipotential bonding system,Equipotential bonding system
+AP,APA,equipotential bonding system,earthing/grounding,Lightning protection system 
+AP,APB,equipotential bonding system,equipotential bonding,installation systems for several systems of the electrical grid and distribution system 
+AP,APG,equipotential bonding system,lightning protection system,Installation system for systems for higher-level management
+A,AS,electrical grid and distribution system,installation systems for several systems of the electrical grid and distribution system ,Installation system for several systems for measuring and metering
+AS,ASA,installation systems for several systems of the electrical grid and distribution system ,installation system for systems for higher-level management,installation system for several protecting systems 
+AS,ASB,installation systems for several systems of the electrical grid and distribution system ,installation system for several systems for measuring and metering,Installation system for several control systems 
+AS,ASF,installation systems for several systems of the electrical grid and distribution system ,installation system for several protecting systems ,Installation system for several alarm systems
+AS,ASK,installation systems for several systems of the electrical grid and distribution system ,installation system for several control systems ,Installation system for panels and desks
+AS,ASP,installation systems for several systems of the electrical grid and distribution system ,installation system for several alarm systems,"Transformer, Converter stations "
+AS,ASW,installation systems for several systems of the electrical grid and distribution system ,Installation system for panels and desks,Transformer station (grid transformer)
+A,AT,electrical grid and distribution system,electrical transformer systems,Converter station (HVDC)
+AT,ATA,electrical transformer systems,transformer system,Systems for besideand help purpose among other duties from main process 
+AT,ATD,electrical transformer systems,converter station (hvdc),Electrical installation (Lighting and power) 
+A,AX,electrical grid and distribution system,systems for beside- and help purpose among other duties from main process,- available for use -
+AX,AXC,systems for beside- and help purpose among other duties from main process,electrical installation (lighting and power) ,Objects for housing technical systems or installations of power distribution including ancillary systems 
+AX,AXU,systems for beside- and help purpose among other duties from main process,emergency lighting,"Structure, building for systems of power distribution incl. ancillary systems"
+A,AZ,electrical grid and distribution system,objects for housing technical systems or installations of power distribution incl. ancillary systems,Topside 
+AZ,AZA,objects for housing technical systems or installations of power distribution incl. ancillary systems,structure for network distribution systems including ancillary systems,not specified
+AZA,AZA10,structure for network distribution systems including ancillary systems,topside,not specified
+AZA10,AZA11,topside,primary structure topside,not specified
+AZA10,AZA12,topside,secondary structure topside,Supporting structure
+AZA10,AZA13,topside,tertiary structure topside,not specified
+AZA,AZA20,structure for network distribution systems including ancillary systems,supporting structure,not specified
+AZA20,AZA21,supporting structure,primary structure  supporting structure,not specified
+AZA20,AZA22,supporting structure,secondary structure supporting structure,free
+AZA20,AZA23,supporting structure,tertiary structure supporing structure,not specified
+AZA,AZA30,structure for network distribution systems including ancillary systems,helideck,not specified
+AZA30,AZA31,helideck,primary structure helideck,not specified
+AZA30,AZA32,helideck,secondary structure helideck,Foundation
+AZA30,AZA33,helideck,tertiary structure helideck,not specified
+AZA,AZA40,structure for network distribution systems including ancillary systems,foundations,not specified
+AZA40,AZA41,foundations,primary structure foundations,not specified
+AZA40,AZA42,foundations,secondary structure foundations,not specified
+AZA40,AZA43,foundations,tertiary structure foundations,Area (if not *AZF* or *AZG*) 
+AZA,AZA50,structure for network distribution systems including ancillary systems,substation building,Electrical auxiliary power supply system 
+AZ,AZC,objects for housing technical systems or installations of power distribution incl. ancillary systems,onshore structure for network distribution including ancillary systems,Low voltage electrical main supply system 1 
+system,B,system class,electrical auxiliary power supply system,"Low voltage electrical main supply system 1, voltage level 1"
+B,BF,electrical auxiliary power supply system,auxiliary ac systems for un < 1 kv,"Low voltage electrical main supply system 1, voltage level 2"
+BF,BFA,auxiliary ac systems for un < 1 kv,normal distribution 400v ac,"Low voltage electrical main supply system 1, auxiliary power transformer "
+BF,BFB,auxiliary ac systems for un < 1 kv,normal distribution 215 v / 110 v ac,Control and protection system
+BF,BFT,auxiliary ac systems for un < 1 kv,low voltage auxiliary transformer,Low voltage electrical supply system 1 for safety services
+BF,BFY,auxiliary ac systems for un < 1 kv,control and protection system < 1 kv ac,"Low voltage electrical supply system 1 for safety services, voltage level 1"
+B,BK,electrical auxiliary power supply system,auxiliary ac backup systems for un < 1 kv,Electric source for safety services 1
+BK,BKA,auxiliary ac backup systems for un < 1 kv,emergency/safety distribution 400v ac,Uninterruptible power supply system UPS 
+BK,BKV,auxiliary ac backup systems for un < 1 kv,electric backup source (diesel emergency power),UPS distribution system 1
+B,BM,electrical auxiliary power supply system,auxiliary uninterruptible power supply system (ups),UPS distribution system 2
+BM,BMA,auxiliary uninterruptible power supply system (ups),ups system 400v ac,Low voltage DC electrical main supply system 
+BM,BMB,auxiliary uninterruptible power supply system (ups),ups system 110v dc,"Low voltage DC electrical main supply system, voltage level 1 "
+B,BP,electrical auxiliary power supply system,auxiliary dc systems for un < 1 kv,"Low voltage DC electrical main supply system, converter system "
+BP,BPA,auxiliary dc systems for un < 1 kv,normal distribution <110v dc,"Low voltage DC electrical main supply system, battery system "
+BP,BPU,auxiliary dc systems for un < 1 kv,converter system 110v dc,Control and protection system
+BP,BPV,auxiliary dc systems for un < 1 kv,battery system <110v dc,Low voltage DC electrical supply system for safety purposes 
+BP,BPY,auxiliary dc systems for un < 1 kv,control and protection system 110v dc,Low voltage DC electrical supply system 1 for safety purposes 
+B,BQ,electrical auxiliary power supply system,auxiliary dc backup systems for un < 1 kv,Battery system
+BQ,BQA,auxiliary dc backup systems for un < 1 kv,emergency/safety distribution 110v dc,Control and protection system
+BQ,BQV,auxiliary dc backup systems for un < 1 kv,battery system emergency/safety distribution 110v dc,Installation systems for several systems of the electrical auxiliary power supply system 
+BQ,BQY,auxiliary dc backup systems for un < 1 kv,control and protection system emergency/safety distribution 110v dc,Installation system for systems for higher-level management
+B,BS,electrical auxiliary power supply system,installation systems for several systems of the electrical auxiliary power supply system ,Installation system for several systems for measuring and metering
+BS,BSA,installation systems for several systems of the electrical auxiliary power supply system ,installation system for systems for higher-level management of the auxiliary power supply system,Installation system for several protecting systems
+BS,BSB,installation systems for several systems of the electrical auxiliary power supply system ,installation system for several systems for measuring and metering  of the auxiliary power supply system,Installation system for several control systems
+BS,BSF,installation systems for several systems of the electrical auxiliary power supply system ,installation system for several protecting systems,Installation system for several alarm systems
+BS,BSK,installation systems for several systems of the electrical auxiliary power supply system ,installation system for several control systems,Installation system for panels and desks
+BS,BSP,installation systems for several systems of the electrical auxiliary power supply system ,installation system for several alarm systems of the auxiliary power supply system,Control and protection systems
+BS,BSW,installation systems for several systems of the electrical auxiliary power supply system ,installation systems for panels and desks,Control and protection system
+B,BY,electrical auxiliary power supply system,control and protection systems,Control and management systems 
+BY,BYA,control and protection systems,control and protection system,General process automation tasks
+system,C,system class,control and management systems,Installation system for several systems for general process automation tasks
+C,CA,control and management systems,general process automation tasks,Operation and monitoring
+CA,CAS,general process automation tasks,installation system for several systems for general process automation tasks,Operation and monitoring
+C,CB,control and management systems,operation and monitoring,not specified
+CB,CBA,operation and monitoring,process safety systems,not specified
+CBA,CBA10,process safety systems,"process shutdown system (psd), emergency shutdown (esd), electronic safety shut-down control (essd)",Operation and monitoring
+CBA,CBA20,process safety systems,high integrity pressure protection system (hipps),not specified
+CB,CBB,operation and monitoring,general,not specified
+CBB,CBB10,general,protection control and monitoring (pcm),Installation system for several systems  for operation and monitoring
+CBB,CBB20,general,integrated condition monitoring system (icms),Automation systems 
+CB,CBS,operation and monitoring,installation system for several systems  for operation and monitoring,Automation system
+C,CC,control and management systems,automation systems,not specified
+CC,CCA,automation systems,automation system,not specified
+CCA,CCA10,automation system,plant information system (core),Installation system for several automation systems
+CCA,CCA20,automation system,"platform control system (pcs, pacs)",Diagnostic systems
+CC,CCS,automation systems,installation system for several automation systems,Diagnostic systems
+C,CD,control and management systems,diagnostic systems,not specified
+CD,CDA,diagnostic systems,instrument specialty systems,not specified
+CDA,CDA10,instrument specialty systems,leak detection systems,not specified
+CDA,CDA20,instrument specialty systems,tank gauging systems,not specified
+CDA,CDA30,instrument specialty systems,loading computer,Installation system for several diagnostic systems
+CDA,CDA40,instrument specialty systems,analysers,Engineering systems
+CD,CDS,diagnostic systems,installation system for several diagnostic systems,Installation system for several engineering systems
+C,CE,control and management systems,engineering systems,Process monitoring 
+CE,CES,engineering systems,installation system for several engineering systems,Fire alarm system 
+C,CK,control and management systems,process monitoring,Video monitoring system 
+CK,CKA,process monitoring,fire alarm system,Alarm system (acoustic/optical)
+CK,CKC,process monitoring,video monitoring system,- available for use -
+CK,CKD,process monitoring,public address and general alarm (paga),not specified
+CK,CKQ,process monitoring,non-electrical monitoring systems,not specified
+CKQ,CKQ10,non-electrical monitoring systems,corrosion monitoring,not specified
+CKQ,CKQ20,non-electrical monitoring systems,equipment health / condition monitoring system (cms),not specified
+CKQ,CKQ30,non-electrical monitoring systems,structural condition monitoring system (scms),not specified
+CKQ,CKQ40,non-electrical monitoring systems,fieldbus communications,not specified
+CKQ,CKQ50,non-electrical monitoring systems,distributed temperature sensing (dts) ,Installation system for several systems for process monitoring
+CKQ,CKQ60,non-electrical monitoring systems,sand monitoring,"Water supply, disposal and treatment"
+CK,CKS,process monitoring,installation system for several systems for process monitoring,Distribution systems after water treatment
+system,G,system class,"water supply , disposal, and treatment",- available for use -
+G,GH,"water supply , disposal, and treatment",water treatment systems,- available for use -
+GH,GHQ,water treatment systems,non waste water treatment systems,- available for use -
+GH,GHR,water treatment systems,waste water treatment systems,- available for use -
+G,GQ,"water supply , disposal, and treatment",water supply and distribution,- available for use -
+GQ,GQA,water supply and distribution,fresh (non potable) water supply and distribution,- available for use -
+GQ,GQB,water supply and distribution,irrigation water system and holding ponds (freshwater),Systems for conversion of energy (without heat generation) and for transmission of electrical energy 
+GQ,GQC,water supply and distribution,sea water supply and distribution,Wind Turbine System
+system,M,system class,systems for conversion of energy (without heat generation) and for transmission of electrical energy,Rotor System from incl. tip of the blade to excl. connection drive train 
+M,MD,systems for conversion of energy (without heat generation) and for transmission of electrical energy,wind turbine system,"Rotor System 1, overall"
+MD,MDA,wind turbine system,rotor system from incl. tip of the blade to excl. connection drive train ,"Rotor System 1, Rotor Blade 1"
+MDA,MDA10,rotor system from incl. tip of the blade to excl. connection drive train ,"rotor system 1, overall","Rotor System 1, Rotor Blade 2"
+MDA,MDA11,rotor system from incl. tip of the blade to excl. connection drive train ,"rotor system 1, rotor blade 1","Rotor System 1, Rotor Blade 3"
+MDA,MDA12,rotor system from incl. tip of the blade to excl. connection drive train ,"rotor system 1, rotor blade 2","Rotor System 1, Rotor Hub System"
+MDA,MDA13,rotor system from incl. tip of the blade to excl. connection drive train ,"rotor system 1, rotor blade 3","Rotor System 1, Rotor Brake Subsystem"
+MDA,MDA15,rotor system from incl. tip of the blade to excl. connection drive train ,"rotor system 1, rotor hub system",Drive Train System with gearbox: from excl. drive train without gearbox: from excl. generator
+MDA,MDA16,rotor system from incl. tip of the blade to excl. connection drive train ,"rotor system 1, rotor brake subsystem","Drive Train System 1, Rotor Bearing"
+MD,MDK,wind turbine system,drive train system with gearbox,"Drive Train System 1, Speed Conversion"
+MDK,MDK11,drive train system with gearbox,"drive train system 1, rotor bearing","Drive Train System 1, Brake Subsystem"
+MDK,MDK12,drive train system with gearbox,"drive train system 1, speed conversion","Drive Train System 1, Torque Transmission High Speed"
+MDK,MDK13,drive train system with gearbox,"drive train system 1, brake subsystem","Drive Train System 1, Rotor Lock"
+MDK,MDK14,drive train system with gearbox,"drive train system 1, torque transmission high speed","Drive Train System 1, Rotor Slewing Unit"
+MDK,MDK15,drive train system with gearbox,"drive train system 1, rotor lock","Drive Train System 1, Main Gear Oil"
+MDK,MDK16,drive train system with gearbox,"drive train system 1, rotor slewing unit","Drive Train System 1, Offline Gear Oil"
+MDK,MDK17,drive train system with gearbox,"drive train system 1, main gear oil","Drive Train System 1, Lubricant Bearing and Gear Box"
+MDK,MDK18,drive train system with gearbox,"drive train system 1, offline gear oil",Yaw System to incl. yaw ring
+MDK,MDK19,drive train system with gearbox,"drive train system 1, lubricant bearing and gear box",Yaw Drive System
+MD,MDL,wind turbine system,yaw system to incl. yaw ring,Yaw Gear Lubrication
+MDL,MDL11,yaw system to incl. yaw ring,yaw drive system,Yaw Brake System
+MDL,MDL12,yaw system to incl. yaw ring,yaw gear lubrication,Lubricant system
+MDL,MDL13,yaw system to incl. yaw ring,yaw brake system,Hydraulic system
+MD,MDV,wind turbine system,lubricant system,Generator system
+MD,MDX,wind turbine system,hydraulic system,Generator to incl. generator bushing
+M,MK,systems for conversion of energy (without heat generation) and for transmission of electrical energy,generator system,Generator exciter set
+MK,MKA,generator system,generator to incl. generator bushing,Transmission
+MK,MKC,generator system,generator exciter set,Generator lead  from excl. generator bushing to excl. low-voltage bushing of generator transformers excl. generator circuit breaker
+M,MS,systems for conversion of energy (without heat generation) and for transmission of electrical energy,transmission,Generator circuit-breaker system
+MS,MSA,transmission,generator lead  from excl. generator bushing to excl. low-voltage bushing of generator transformers excl. generator circuit breaker,Converter system
+MS,MSC,transmission,generator circuit-breaker system,Compensation system
+MS,MSE,transmission,converter system,Generator transformer system
+MS,MSS,transmission,compensation system,Common System for systems for conversion of energy (without heat generation) and for transmission of electrical energy
+MS,MST,transmission,generator transformer system,"Frame, support structure"
+M,MU,systems for conversion of energy (without heat generation) and for transmission of electrical energy,common system for systems for conversion of energy (without heat generation) and for transmission of electrical energy,Cooling
+MU,MUG,common system for systems for conversion of energy (without heat generation) and for transmission of electrical energy,"frame, support structure",Control and protection systems
+MU,MUR,common system for systems for conversion of energy (without heat generation) and for transmission of electrical energy,cooling,Control and protection system
+M,MY,systems for conversion of energy (without heat generation) and for transmission of electrical energy,turbine control and protection systems,Cooling water systems
+MY,MYA,turbine control and protection systems,remote monitoring system,Cooling water system 1 of the main process
+system,P,system class,cooling water systems,- available for use -
+P,PA,cooling water systems,cooling water systems of the main process,- available for use -
+PA,PAQ,cooling water systems of the main process,sea water cooling,not specified
+PA,PAT,cooling water systems of the main process,fresh water cooling,"Superordinate systems such as the electrical network and distribution system, higher-level control systems "
+system,U,system class,structures and areas for systems inside of the power plant process,Structures and areas for systems inside of the power plant process
+U,UB,structures and areas for systems inside of the power plant process,structures for electrical auxiliary power supply system,Structures for electrical auxiliary power supply system
+UB,UBA,structures for electrical auxiliary power supply system,switchgear building,Switchgear building
+U,UM,structures and areas for systems inside of the power plant process,wind farm structures,Structures for systems for conversion of energy and for transmission of electrical energy
+UM,UMD,wind farm structures,structure for wind turbine system,Structure for wind turbine system
+UMD,UMD10,structure for wind turbine system,wind turbine nacelle,Nacelle
+UMD10,UMD11,wind turbine nacelle,primary structure wind turbine nacelle,not specified
+UMD10,UMD12,wind turbine nacelle,secondary structure wind turbine nacelle,not specified
+UMD10,UMD13,wind turbine nacelle,tertiary structure wind turbine nacelle,not specified
+UMD,UMD20,structure for wind turbine system,wind turbine tower,Tower
+UMD20,UMD21,wind turbine tower,primary structure wind turbine tower,not specified
+UMD20,UMD22,wind turbine tower,secondary structure wind turbine tower,not specified
+UMD20,UMD23,wind turbine tower,tertiary structure wind turbine tower,not specified
+UMD,UMD30,structure for wind turbine system,wind turbine transition piece,Transition piece
+UMD30,UMD31,wind turbine transition piece,primary structure transition piece,not specified
+UMD30,UMD32,wind turbine transition piece,secondary structure transition piece,not specified
+UMD30,UMD33,wind turbine transition piece,tertiary structure transition piece,not specified
+UMD,UMD40,structure for wind turbine system,wind turbine foundation,Foundation
+UMD40,UMD41,wind turbine foundation,primary structure wind turbine foundation,not specified
+UMD40,UMD42,wind turbine foundation,secondary structure wind turbine foundation,not specified
+UMD40,UMD43,wind turbine foundation,tertiary structure wind turbine foundation,not specified
+U,UU,structures and areas for systems inside of the power plant process,structures and areas for several systems,Structures and areas for several systems
+UU,UUA,structures and areas for several systems,structure or area for several systems,Structure and area for several systems
+system,V,system class,systems for storage of materials or goods,Systems for storage of materials or goods
+V,VA,systems for storage of materials or goods,storage systems,"Systems for storage of spare-, reserve and wear parts"
+VA,VAA,storage systems,"systems for storage of spare-,  reserve- and wear parts","Systems for storage of spare-, reserve and wear parts"
+system,X,system class,ancillary systems,Ancillary systems
+X,XA,ancillary systems,ventilation and air-conditioning systems,Ventilation and air-conditioning systems
+XA,XAA,ventilation and air-conditioning systems,air conditioning and ventilation,Central ventilation and air-conditioning system
+XA,XAM,ventilation and air-conditioning systems,building management system,Ventilation and air-conditioning system in structures for systems for conversion of energy and for transmission of electrical energy
+X,XB,ancillary systems,heating systems,Heating systems
+XB,XBA,heating systems,heating,Central heating system
+XB,XBU,heating systems,heat tracing,- available for use -
+X,XF,ancillary systems,"equipotential bonding systems (e.g. earthing, lightning protection)","Equipotential bonding systems (e.g. earthing, lightning protection)"
+XF,XFC,"equipotential bonding systems (e.g. earthing, lightning protection)",external lightning protection,External lightning protection
+X,XG,ancillary systems,fire fighting,Fire extinguishing systems
+XG,XGA,fire fighting,fire water system,Fire water system
+XG,XGC,fire fighting,"water deluge, fog or mist system fire extinguishing",Spray deluge system
+XG,XGF,fire fighting,compressed air foam (caf) fire extinguishing,Foam extinguishing system
+XG,XGK,fire fighting,inert gas fire extinguishing,Inert gas fire extinguishing system
+XG,XGM,fire fighting,manual fire extinguishing system,Fire extinguishing system with other extinguishing agent
+XG,XGQ,fire fighting,deck integrated fire fighting (diff),- available for use -
+X,XH,ancillary systems,drains?,Waterway systems
+X,XK,ancillary systems,chilled water systems,Chilled water systems
+XK,XKA,chilled water systems,chilled water generation system,Central chilled water generation
+XK,XKB,chilled water systems,chilled water distribution system,Central chilled water conveyance and distribution
+X,XL,ancillary systems,potable water systems,Potable water systems
+XL,XLQ,potable water systems,potable water supply and distribution,- available for use -
+X,XM,ancillary systems,material handling systems,"Crane assemblies, stationary hoists and inspection equipment"
+XM,XMM,material handling systems,lifting equipment,"Crane assembly, stationary hoists and inspection equipment in structures for systems for conversion of energy (without heat generation) and  for transmission of electrical energy"
+XM,XMT,material handling systems,pulling systems,- available for use -
+X,XN,ancillary systems,elevator systems,Elevator systems
+XN,XNM,elevator systems,elevator system in structures for systems for conversion of energy (without heat generation) and for transmission of electrical energy,Elevator system in structures for systems for conversion of energy (without heat generation) and for transmission of electrical energy
+XN,XNZ,elevator systems,elevator system in structures for other purposes,Elevator system in structures for other purposes
+X,XQ,ancillary systems,other ancillary systems,- available for use -
+XQ,XQA,other ancillary systems,installation systems,- available for use -
+XQA,XQA10,installation systems,installation aids,not specified
+XQA,XQA20,installation systems,grouting system,not specified
+XQA,XQA30,installation systems,pile grippers (hydraulic),not specified
+XQ,XQC,other ancillary systems,helideck lighting,- available for use -
+XQ,XQD,other ancillary systems,navigation aids,- available for use -
+XQ,XQF,other ancillary systems,oil heating,- available for use -
+XQ,XQR,other ancillary systems,corrosion protection,- available for use -
+XQR,XQR10,corrosion protection,"cathodic protection, sacrificial",not specified
+XQR,XQR20,corrosion protection,"cathodic protection, impressed current",not specified
+XQR,XQR30,corrosion protection,miscellaneous corrosion protection,not specified
+XQ,XQS,other ancillary systems,drains,- available for use -
+XQS,XQS10,drains,open drain system - non-hazardous,not specified
+XQS,XQS20,drains,open drain system - hazardous,not specified
+XQS,XQS30,drains,closed drains,not specified
+XQS,XQS40,drains,surface water catchment and drainage,not specified
+XQ,XQT,other ancillary systems,training simulators and emulators,- available for use -
+XQT,XQT10,training simulators and emulators,facility/plant simulator,not specified
+XQT,XQT20,training simulators and emulators,subsea simulator,not specified
+XQT,XQT30,training simulators and emulators,facility/plant emulator,not specified
+X,XS,ancillary systems,safety services for installations and persons,Safety services for installations and persons
+XS,XSA,safety services for installations and persons,access control,Access control system
+XS,XSB,safety services for installations and persons,surveillance / closed circuit monitoring (cctv),Video monitoring system
+XS,XSC,safety services for installations and persons,intruder detection,Intrusion detection system
+XS,XSD,safety services for installations and persons,obstacle warning systems,Obstruction waming systems
+XSD,XSD11,obstacle warning systems,obstacle warning system aviation,Aviation obstruction marking
+XSD,XSD12,obstacle warning systems,obstacle warning system marine,Seafaring obstruction marking
+XSD,XSD13,obstacle warning systems,sonar system,not specified
+XS,XSE,safety services for installations and persons,systems for rescue and safety of persons,Systems for rescue and safety of persons
+XS,XSQ,safety services for installations and persons,safety equipment,- available for use -
+XS,XSS,safety services for installations and persons,safety signage,- available for use -
+X,XU,ancillary systems,sanitary waste water systems,Sanitary waste water systems
+XU,XUA,sanitary waste water systems,sewage,Central sanitary waste water system
+system,Y,system class,communication and information systems,Communication and information systems
+Y,YA,communication and information systems,communications systems,Communications systems
+YA,YAA,communications systems,telephone/personal access exchange system (pabx),Telephone system
+YA,YAB,communications systems,marine communications,Radiotelephone system
+YAB,YAB10,marine communications,"marine radios, gmdss",not specified
+YAB,YAB20,marine communications,"radios, vhf/uhf",not specified
+YAB,YAB30,marine communications,local ship to facility communications,not specified
+YAB,YAB40,marine communications,satellite communication system (vsat),not specified
+YA,YAQ,communications systems,automated terminal information service (atis),- available for use -
+YA,YAR,communications systems,site communications and local networks,- available for use -
+YA,YAS,communications systems,field communications,- available for use -
+YAS,YAS10,field communications,microwave radio communication systems,not specified
+YAS,YAS20,field communications,backbone network (ibr network & system uk),not specified
+YAS,YAS30,field communications,fibre optic,not specified
+Y,YB,communication and information systems,information systems,Information systems
+YB,YBC,information systems,system for acquisition of environmental data,System for acquisition of environmental data
+YBC,YBC10,system for acquisition of environmental data,meteocean observation system,not specified
+YBC10,YBC11,meteocean observation system,lidar wind speed measurement,not specified
+YBC,YBC20,system for acquisition of environmental data,geological/seabed measurement system ,not specified
+YBC,YBC30,system for acquisition of environmental data,hydrological measurement system ,not specified
+YBC,YBC40,system for acquisition of environmental data,flora measurement system ,not specified
+YBC,YBC50,system for acquisition of environmental data,fauna measurement system ,not specified
+YB,YBQ,information systems,vessel tracking and management system (vtms),- available for use -
+YB,YBR,information systems,"computing systems equipment (pcs, printers, servers)",- available for use -
+YB,YBS,information systems,marine radar and arpas,- available for use -
+Y,YC,communication and information systems,it networks,IT network
+YC,YCQ,it networks,local area network communication (lan),- available for use -
+YC,YCR,it networks,wifi,- available for use -
+YC,YCS,it networks,4g/5g system,- available for use -
+YC,YCT,it networks,voice and data network,- available for use -
+system,Z,system class,structures and areas for systems outside of the power plant process,Structures and areas for systems outside of the power plant process
+Z,ZQ,structures and areas for systems outside of the power plant process,infrastructure,- available for use -
+Z,ZU,structures and areas for systems outside of the power plant process,other buildings,- available for use -
+ZU,ZUA,other buildings,harbor building,- available for use -
+Z,ZV,structures and areas for systems outside of the power plant process,structures and surfaces for storage of material and goods,Structures and surfaces for storage of material and goods
+ZV,ZVA,structures and surfaces for storage of material and goods,warehouse building,Structure for storage of spare and wearing parts
+Z,ZW,structures and areas for systems outside of the power plant process,administrative and staff amenity buildings or structures,Structures for administrative tasks or staff amenities
+ZW,ZWA,administrative and staff amenity buildings or structures,"office building, administration building","Office building, administration building"
+ZW,ZWB,administrative and staff amenity buildings or structures,training facility,Training facility
+ZW,ZWC,administrative and staff amenity buildings or structures,staff amenities building,Staff amenities building
+ZW,ZWG,administrative and staff amenity buildings or structures,accomodation building or area,"Residential building, residential area"
+Z,ZY,structures and areas for systems outside of the power plant process,structures for communications and information,Structures for communications and information
+ZY,ZYB,structures for communications and information,structure for acquisition of environmental data,Structure for acquisition of environmental data
+Z,ZZ,structures and areas for systems outside of the power plant process,onshore infrastructure,"Structures and surfaces for conveyance and traffic, fencing, gardens and other purposes"
+ZZ,ZZA,onshore infrastructure,roads/access,"Works roadway, path"
+ZZ,ZZC,onshore infrastructure,parking area incl. associated structures,Parking area incl. associated structures
+ZZ,ZZK,onshore infrastructure,"laydown areas (permanent, construction, etc.)",Yards
+ZZ,ZZL,onshore infrastructure,fencing and gate system,Fencing and gate system
+ZZ,ZZN,onshore infrastructure,"outdoor areas, plots of land","Outdoor areas, plots of land"
+ZZ,ZZR,onshore infrastructure,bunds (for containment),- available for use -
+ZZ,ZZS,onshore infrastructure,"civil-utilities structures (catch basins, manholes, etc.)",- available for use -
+ZZ,ZZT,onshore infrastructure,"jetty, bulkheads, and wharves",- available for use -
+ZZ,ZZU,onshore infrastructure,"helipads, runways, taxiways",- available for use -
+ZZ,ZZW,onshore infrastructure,site preparation & grading ,Structure for site preparation and setup
