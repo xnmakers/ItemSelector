@@ -17,7 +17,7 @@ AB,ABS,systems for un > 420 kv,installation system for higher-level tasks of sys
 AB,ABT,systems for un > 420 kv,dc distribution for 525 kv < un < 765 kv,Systems for 380 kV ≤ Un < 420 kV 
 AB,ABU,systems for un > 420 kv,dc distribution for 420 kv < un < 525 kv,Distribution for 380 kV 
 A,AC,electrical grid and distribution system,systems for 380 kv < un < 420 kv,- available for use -
-AC,ACA,systems for 380 kv, < un < 420 kv,ac distribution for 380 kv < un < 420 kv,Systems for 220 kV s Un < 380 kV 
+AC,ACA,systems for 380 kv < un < 420 kv,ac distribution for 380 kv < un < 420 kv,Systems for 220 kV s Un < 380 kV 
 AC,ACQ,systems for 380 kv < un < 420 kv,dc distribution for 380 kv < un < 420 kv,Distribution for 300 kV < Un < 380 kV
 AC,ACS,systems for 380 kv < un < 420 kv,installation system for higher-level tasks of systems for 380 kV < Un < 420 kV,Installation system for higher-level tasks of systems for 380 kV < Un < 420 kV
 A,AD,electrical grid and distribution system,systems for 220 kv < un < 380 kv,Distribution for 250 kV < Un < 300 kV
