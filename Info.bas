@@ -2,7 +2,7 @@ Attribute VB_Name = "Info"
 'XNMAKERS CODE STARTS HERE
 Option Private Module
 Option Explicit
-Public Const INFO_VERSION As Double = 2.01
+Public Const INFO_VERSION As Double = 2.1
 Public Const INFO_DATE As String = "02/02/2025"
 Public Const INFO_FILES_LIST As String = "Core.bas" & vbCrLf & _
                                          "Info.bas" & vbCrLf & _
