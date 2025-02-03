@@ -67,27 +67,16 @@ Private Const MININSIDEHEIGHT As Long = 200
 Private Const DESCAREAHEIGHT As Long = 30
 
 Private WithEvents Tb_ClassKey As MSForms.TextBox
-Attribute Tb_ClassKey.VB_VarHelpID = -1
 Private WithEvents Tb_ClassValue As MSForms.TextBox
-Attribute Tb_ClassValue.VB_VarHelpID = -1
 Private WithEvents Tv_ClassTree As MSComctlLib.TreeView
-Attribute Tv_ClassTree.VB_VarHelpID = -1
 Private WithEvents Btn_Insert As MSForms.CommandButton
-Attribute Btn_Insert.VB_VarHelpID = -1
 Private WithEvents Btn_Close As MSForms.CommandButton
-Attribute Btn_Close.VB_VarHelpID = -1
 Private WithEvents Btn_Help As MSForms.CommandButton
-Attribute Btn_Help.VB_VarHelpID = -1
 Private WithEvents Btn_Update As MSForms.CommandButton
-Attribute Btn_Update.VB_VarHelpID = -1
 Private WithEvents Lb_SearchKey As MSForms.Label
-Attribute Lb_SearchKey.VB_VarHelpID = -1
 Private WithEvents Lb_SearchValue As MSForms.Label
-Attribute Lb_SearchValue.VB_VarHelpID = -1
 Private WithEvents Lb_Title As MSForms.Label
-Attribute Lb_Title.VB_VarHelpID = -1
 Private WithEvents Lb_Desc As MSForms.Label
-Attribute Lb_Desc.VB_VarHelpID = -1
 
 Private pKeyFilterStr As String
 Private pValueFilterStr As String
@@ -209,7 +198,7 @@ Private Sub InitializeControls()
     Btn_Update.ForeColor = RGB(255, 255, 255)
     Btn_Update.BackColor = RGB(144, 238, 144) ' Light Green
     
-    SetControlSize
+    SetControlSize    
 End Sub
 
 ' --------------Set all the control size, position, and visibility based on the form size
@@ -439,7 +428,9 @@ End Sub
 
 ' --------------Update Button is clicked
 Private Sub Btn_Update_Click()
-    MsgBox "Update function is not available yet", vbInformation
+    Unload Me
+    Core.IsUserFormLoaded = False
+    Updater.Update
 End Sub
 
 ' --------------TreeView Node Selection Changed
@@ -510,8 +501,6 @@ End Sub
 ' --------------------Control Event Handlers ---------------------
 ' ----------------------------------------------------------------
 ' ----------------------------------------------------------------
-
-
 
 
 

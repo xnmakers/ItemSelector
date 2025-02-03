@@ -1,10 +1,15 @@
 Attribute VB_Name = "Info"
 'XNMAKERS CODE STARTS HERE
-'Core.bas, Info.bas, ClassItemSelector.frm, Assigner.cls, ClassNode.cls, DataLibrary.cls
 Option Private Module
 Option Explicit
 Public Const INFO_VERSION As Double = 2.01
 Public Const INFO_DATE As String = "02/02/2025"
+Public Const INFO_FILES_LIST As String = "Core.bas" & vbCrLf & _
+                                         "Info.bas" & vbCrLf & _
+                                         "ClassItemSelector.frm" & vbCrLf & _
+                                         "Assigner.cls" & vbCrLf & _
+                                         "ClassNode.cls" & vbCrLf & _
+                                         "DataLibrary.cls"
 
 Public Const INFO_AUTHOR As String = "Xingyun Jin"
 Public Const INFO_EMAIL As String = "xingyun.jin@avangrid.com"
@@ -20,6 +25,4 @@ Public Const INFO_KNOWNISSUE = vbCrLf & "Known Issues:" & vbCrLf & _
                                 "6. The Macro is not tested on Excel Mobile"
 
 Public Const INFO_CONTACT = vbCrLf & "Please contact the Author, " & INFO_AUTHOR & " for more information " & vbCrLf & INFO_EMAIL
-
-
 
