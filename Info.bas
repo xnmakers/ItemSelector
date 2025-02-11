@@ -1,5 +1,7 @@
 Attribute VB_Name = "Info"
 'XNMAKERS CODE STARTS HERE
+'Files to be Updated
+'Core.bas; Info.bas; ClassItemSelector.frm; Assigner.cls; ClassNode.cls; DataLibrary.cls
 Option Private Module
 Option Explicit
 Public Const INFO_VERSION As Double = 2.1
