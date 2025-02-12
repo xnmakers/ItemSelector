@@ -4,17 +4,23 @@ Public Sub Update()
     Dim linkStr As String
     Dim installUrl As String
     Dim currentVersion As Double
+    Dim newVersion As Double
+    
+    Dim vbaProject As Object
+    Set vbaProject = ThisWorkbook.VBProject
 
-    ' Get current version from your Info module or constant
-    On Error Resume Next
-    currentVersion = Info.INFO_VERSION
-    If Err.Number <> 0 Then
-        currentVersion = 0.0
-    End If
-    On Error GoTo 0
-
+    currentVersion = 0#
+    newVersion = 0# ' Initialize newVersion to a default value
     ' Configuration: URL to your update file
     installUrl = "https://raw.githubusercontent.com/xnmakers/ItemSelector/refs/heads/main/INSTALL"
+
+    Dim vbComponent As Object
+    For Each vbComponent In vbaProject.VBComponents
+        If vbComponent.Name = "Info" Then
+            currentVersion = GetVersionNumber(vbComponent.codeModule)
+            Exit For
+        End If
+    Next vbComponent
     
     ' Create HTTP request to get the update file
     Set httpRequest = CreateObject("WinHttp.WinHttpRequest.5.1")
@@ -60,38 +66,13 @@ Public Sub Update()
         fileContentDict(fileName) = content
     Next i
 
-
-    Dim newVersion As Double
-    newVersion = 0 ' Initialize newVersion to a default value
-
+    Dim filesToDelete() As String
     ' Extract version number from Info.bas if it exists in the downloaded files
     If fileContentDict.Exists("Info.bas") Then
         Dim infoContent As String
         infoContent = fileContentDict("Info.bas")
-        
-        Dim versionPattern As String
-        versionPattern = "Public Const INFO_VERSION As Double = "
-        
-        Dim versionPos As Long
-        versionPos = InStr(infoContent, versionPattern)
-        
-        If versionPos > 0 Then
-            Dim versionStart As Long
-            versionStart = versionPos + Len(versionPattern)
-            
-            Dim versionEnd As Long
-            versionEnd = InStr(versionStart, infoContent, vbCrLf)
-            
-            If versionEnd > 0 Then
-                Dim extractedVersion As String
-                extractedVersion = Mid(infoContent, versionStart, versionEnd - versionStart)
-                
-                ' Attempt to convert the extracted version to a Double
-                On Error Resume Next
-                newVersion = CDbl(Trim(extractedVersion))
-                On Error GoTo 0
-            End If
-        End If
+        newVersion = GetVersionNumber(infoContent)
+        filesToDelete = GetFileNames(infoContent)
     End If
     
     ' Check if the new version is valid and greater than the current version
@@ -119,41 +100,21 @@ Public Sub Update()
         Print #fileNum, fileContentDict(key)
         Close #fileNum
     Next key
-
-    ' Delete old modules (except the Updater module itself)
-    Dim vbaProject As Object
-    Set vbaProject = ThisWorkbook.VBProject
-    Dim filesToDelete() As String
-
-    On Error Resume Next
-    filesToDelete = Split(Info.INFO_FILES_LIST, vbCrLf)
-    If Err.Number <> 0 Then
-        filesToDelete = Split("Core.bas" & vbCrLf & _
-                              "Info.bas" & vbCrLf & _
-                              "ClassItemSelector.frm" & vbCrLf & _
-                              "Assigner.cls" & vbCrLf & _
-                              "ClassNode.cls" & vbCrLf & _
-                              "DataLibrary.cls", vbCrLf)
-    End If
-    On Error GoTo 0    
     
     Dim fileToDelete As Variant
     For Each fileToDelete In filesToDelete
-        On Error Resume Next
+
         Dim componentName As String
         componentName = Left(Trim(fileToDelete), InStrRev(Trim(fileToDelete), ".") - 1)
-        ' Skip deletion of the updater module to avoid interrupting the running code.
 
-        If vbaProject.VBComponents.Count = 0 Or vbaProject.VBComponents(componentName) Is Nothing Then
-            GoTo SkipDeletion
-        End If
-
-        If componentName <> "Updater" Then
-            vbaProject.VBComponents.Remove vbaProject.VBComponents(componentName)
-        End If
+        For Each vbComponent In vbaProject.VBComponents
+            If componentName <> "Updater" And vbComponent.Name = componentName Then
+                vbaProject.VBComponents.Remove vbaProject.VBComponents(componentName)
+            End If
+        Next vbComponent
+        
         On Error GoTo 0
         
-    SkipDeletion:
     Next fileToDelete
 
     ' Schedule the import of the new modules to run shortly after this sub ends.
@@ -163,7 +124,7 @@ Public Sub Update()
     MsgBox "Old modules deleted. New modules will be imported shortly.", vbInformation
 End Sub
 
-Public Sub ImportModules()
+Private Sub ImportModules()
     Dim tempFolder As String
     tempFolder = Environ("Temp") & "\VBAUpdate\"
     
@@ -194,3 +155,63 @@ Public Sub ImportModules()
 
     MsgBox "Update successful! Please restart Excel to use the new version.", vbInformation
 End Sub
+
+' Default value is 0
+Private Function GetVersionNumber(codeModuleContent As String) As Double
+    Dim currentVersion As Double
+    currentVersion = 0#
+
+    Dim lines() As String
+    Dim line As Variant
+    Dim versionString As String
+    Dim verPos As Long
+    
+    ' Split the input string into lines
+    lines = Split(codeModuleContent, vbCrLf)
+    
+    ' Loop through each line to find the version number
+    For Each line In lines
+        verPos = InStr(line, "Public Const INFO_VERSION As Double =")
+        
+        If verPos > 0 Then
+            versionString = Trim(Mid(line, verPos + Len("Public Const INFO_VERSION As Double =")))
+            currentVersion = CDbl(versionString)
+            Exit For
+        End If
+    Next line
+
+    GetVersionNumber = currentVersion
+End Function
+
+Private Function GetFileNames(codeModule As String) As String()
+    Dim lines() As String
+    Dim i As Long
+    Dim fileNames() As String
+    
+    ' Default value for fileNames
+    fileNames = Split("Core.bas" & vbCrLf & _
+                      "Info.bas" & vbCrLf & _
+                      "ClassItemSelector.frm" & vbCrLf & _
+                      "Assigner.cls" & vbCrLf & _
+                      "ClassNode.cls" & vbCrLf & _
+                      "DataLibrary.cls", vbCrLf)
+    
+    ' Split the input string into lines
+    lines = Split(codeModule, vbCrLf)
+    
+    ' Loop through the lines to find the one after 'Files to be Updated
+    For i = LBound(lines) To UBound(lines)
+        If InStr(lines(i), "'Files to be Updated") > 0 Then
+            ' The file names are on the next line
+            fileNames = Split(Trim(lines(i + 1)), ";")
+            Exit For
+        End If
+    Next i
+    
+    ' Trim each file name
+    For i = LBound(fileNames) To UBound(fileNames)
+        fileNames(i) = Trim(fileNames(i))
+    Next i
+    
+    GetFileNames = fileNames
+End Function
