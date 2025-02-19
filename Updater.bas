@@ -1,4 +1,3 @@
-Attribute VB_Name = "Updater"
 Public Sub Update()
     Dim httpRequest As Object
     Dim linkStr As String
@@ -17,7 +16,12 @@ Public Sub Update()
     Dim vbComponent As Object
     For Each vbComponent In vbaProject.VBComponents
         If vbComponent.Name = "Info" Then
-            currentVersion = GetVersionNumber(vbComponent.codeModule)
+            Dim codeContent As String
+            Dim j As Long
+            For j = 1 To vbComponent.codeModule.CountOfLines
+                codeContent = codeContent & vbComponent.codeModule.lines(j, 1) & vbCrLf
+            Next j
+            currentVersion = GetVersionNumber(codeContent)
             Exit For
         End If
     Next vbComponent
@@ -41,12 +45,12 @@ Public Sub Update()
     Dim fileContentDict As Object
     Set fileContentDict = CreateObject("Scripting.Dictionary")
     
-    Dim i As Long
-    For i = LBound(linkList) To UBound(linkList)
-        If Trim(linkList(i)) = "" Then Exit For
+    Dim k As Long
+    For k = LBound(linkList) To UBound(linkList)
+        If Trim(linkList(k)) = "" Then Exit For
         
         Dim fileUrl As String
-        fileUrl = Trim(linkList(i))
+        fileUrl = Trim(linkList(k))
         
         Set httpRequest = CreateObject("WinHttp.WinHttpRequest.5.1")
         httpRequest.Open "GET", fileUrl, False
@@ -64,7 +68,7 @@ Public Sub Update()
         Dim fileName As String
         fileName = Mid(fileUrl, InStrRev(fileUrl, "/") + 1)
         fileContentDict(fileName) = content
-    Next i
+    Next k
 
     Dim filesToDelete() As String
     ' Extract version number from Info.bas if it exists in the downloaded files
@@ -105,10 +109,12 @@ Public Sub Update()
     For Each fileToDelete In filesToDelete
 
         Dim componentName As String
+        Dim currentvbComp As String
         componentName = Left(Trim(fileToDelete), InStrRev(Trim(fileToDelete), ".") - 1)
 
         For Each vbComponent In vbaProject.VBComponents
-            If componentName <> "Updater" And vbComponent.Name = componentName Then
+            currentvbComp = vbComponent.Name
+            If componentName <> "Updater" And currentvbComp = componentName Then
                 vbaProject.VBComponents.Remove vbaProject.VBComponents(componentName)
             End If
         Next vbComponent
@@ -203,7 +209,7 @@ Private Function GetFileNames(codeModule As String) As String()
     For i = LBound(lines) To UBound(lines)
         If InStr(lines(i), "'Files to be Updated") > 0 Then
             ' The file names are on the next line
-            fileNames = Split(Trim(lines(i + 1)), ";")
+            fileNames = Split(Mid(Trim(lines(i + 1)), 2), ";")
             Exit For
         End If
     Next i
@@ -215,3 +221,4 @@ Private Function GetFileNames(codeModule As String) As String()
     
     GetFileNames = fileNames
 End Function
+
