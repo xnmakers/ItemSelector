@@ -6,12 +6,6 @@ Option Private Module
 Option Explicit
 Public Const INFO_VERSION As Double = 2.1
 Public Const INFO_DATE As String = "02/10/2025"
-Public Const INFO_FILES_LIST As String = "Core.bas" & vbCrLf & _
-                                         "Info.bas" & vbCrLf & _
-                                         "ClassItemSelector.frm" & vbCrLf & _
-                                         "Assigner.cls" & vbCrLf & _
-                                         "ClassNode.cls" & vbCrLf & _
-                                         "DataLibrary.cls"
 
 Public Const INFO_AUTHOR As String = "Xingyun Jin"
 Public Const INFO_EMAIL As String = "xingyun.jin@avangrid.com"
